@@ -1,0 +1,14 @@
+{
+  "name": "stylish-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "sass --watch styles/style.scss dist/style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.62.0"
+  }
+}

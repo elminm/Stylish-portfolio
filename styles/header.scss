@@ -1,0 +1,54 @@
+@import 'mixin';
+.header__section {
+    min-height: 100vh;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url('https://startbootstrap.github.io/startbootstrap-stylish-portfolio/assets/img/bg-masthead.jpg') ;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    &-hamburger{
+        position: fixed;
+        right: 15px;
+        top: 15px;
+        border-radius: 6px;
+        width: 50px;
+        height: 50px;
+        background-color: rgba(0, 0, 0, 0.49);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: .3s all;
+        &:hover{
+            background-color: rgba(0, 0, 0, 0.804);
+        }
+        svg{
+            width: 30%;
+            color: #fff;
+        }
+    }
+    &-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: $text-color;
+    h1 {
+        font-size: 5.5rem;
+        margin-bottom: 0.5rem;
+    }
+    h3{
+        font-size: 1.5rem;
+        margin-bottom: 2.5rem;
+        font-style: italic;
+    }
+    a {
+        @include btn;
+
+    }
+    }
+}
