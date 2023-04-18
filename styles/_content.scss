@@ -1,0 +1,25 @@
+.content__section {
+    padding: 7.5rem 0;
+    background-color: $blueBtn;
+    color: #fff;
+    @include flex-column-center;
+    &-header {
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 3rem;
+        }
+    }
+    &-links {
+        a:first-child {
+            @include btn;
+            color: #000;
+            background-color: #fff;
+            margin-right: 1.5rem;
+        }
+        a:nth-child(2) {
+            @include btn;
+            background-color: #000;
+            color: #fff;
+        }
+    }
+}
