@@ -1,0 +1,51 @@
+.portfolio__section {
+    @include flex-column-center;
+    padding: 7.5rem 0;
+    &-headers {
+        text-align: center;
+        margin-bottom: 3rem;
+        h5 {
+            @extend .services__section-headers-h5;
+        }
+        h2 {
+            @extend .services__section-headers-h2;
+        }
+    }
+    &-items {
+        display: flex;
+        flex-wrap: wrap;
+        width: 65%;
+        margin:auto;
+
+        &-item {
+            position: relative;
+            width: 50%;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: 0.25s all;
+            }
+            .overlay {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                background-color: rgba(29, 128, 159, 0.9);
+                top: 0;
+                left: 0;
+                z-index: 44;
+                visibility: hidden;
+                transition: 0.25s all;
+            }
+            &:hover {
+               .overlay {
+                visibility: visible;
+                    scale: .9;
+                }
+                img{
+                scale: .9;
+                }
+            }
+        }
+    }
+}
