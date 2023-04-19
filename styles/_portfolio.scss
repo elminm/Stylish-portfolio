@@ -49,3 +49,16 @@
         }
     }
 }
+
+@media (max-width: $breakpoint-tablet) {
+.portfolio__section {
+    &-items {
+        flex-direction: column;
+        max-width: 530px;
+        row-gap: 1rem;
+        &-item{
+            width: 100%;
+        }
+    }
+}
+}

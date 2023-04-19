@@ -43,3 +43,13 @@
         }
     }
 }
+
+@media (max-width: $breakpoint-tablet) {
+    .header__section {
+    &-title {
+        h1 {
+            font-size: 4rem;
+        }
+    }
+    }
+}
